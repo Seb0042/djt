@@ -2,12 +2,12 @@
 
 import os
 import sqlite3
-import re
 import mutagen
+import sys
 from mutagen.easyid3 import EasyID3
 conn = sqlite3.connect('songs.db')
 c = conn.cursor()
-dir = '/data/Music'
+dir = sys.argv[1];
 for root, dirs, files in os.walk(dir):
   for file in files:
     if file.endswith('.mp3'):
@@ -23,15 +23,16 @@ for root, dirs, files in os.walk(dir):
             info['genre'] = 'Unknown'
           elif tag == 'mood':
            info['mood'] = 'None'
-      print(filename) 
-      print(info['artist'][0])
-      print(info['title'][0])
-      print(info['genre'][0])
-#      info.save()
+      artist = info['artist'][0]
+      genre = info['genre'][0]
+      title = info['title'][0]
+      mood = info['mood'][0] 
+      t = (artist,genre,title,mood,file,root) 
+      sql = "insert into songs (artist,genre,title,com,filename,filepath) values (?,?,?,?,?,?)"
+      c.execute(sql,t)  
 conn.commit()
 conn.close()
 
 
-
-#dict_keys(['musicbrainz_albumid', 'tracknumber', 'album', 'conductor', 'compilation', 'musicbrainz_albumartistid', 'musicbrainz_trmid', 'musicbrainz_discid', 'barcode', 'performer', 'albumsort', 'length', 'artist', 'acoustid_id', 'title', 'discnumber', 'copyright', 'albumartistsort', 'musicbrainz_workid', 'website', 'musicbrainz_albumstatus', 'media', 'version', 'composersort', 'replaygain_*_gain', 'titlesort', 'composer', 'date', 'arranger', 'author', 'originaldate', 'lyricist', 'musicbrainz_albumtype', 'language', 'performer:*', 'organization', 'artistsort', 'acoustid_fingerprint', 'musicip_puid', 'genre', 'replaygain_*_peak', 'musicbrainz_artistid', 'catalognumber', 'mood', 'asin', 'discsubtitle', 'releasecountry', 'musicbrainz_releasetrackid', 'encodedby', 'bpm', 'isrc', 'musicbrainz_releasegroupid', 'musicip_fingerprint', 'musicbrainz_trackid'])
+#create table songs (ID INTEGER PRIMARY KEY AUTOINCREMENT, filepath varchar(256),filename varchar(128) , title varchar(64) , artist varchar(64) , genre varchar(32), com varchar(64));
 

@@ -2,20 +2,20 @@
 
 import os
 import sqlite3
-import re
 import mutagen
+import sys
 from mutagen.easyid3 import EasyID3
+
+tag = sys.argv[2]
 conn = sqlite3.connect('songs.db')
 c = conn.cursor()
-dir = '/data/Music'
+dir = sys.argv[1]
 for root, dirs, files in os.walk(dir):
   for file in files:
     if file.endswith('.mp3'):
       filename = root+'/'+file
       info = mutagen.File(filename, easy=True)
-      #print(info['artist'][0])
-      #print(info['title'][0])
-      print(info['genre'][0])
+      print(filename+ " "+tag+": "+info[tag][0])
 #      info.save()
 conn.commit()
 conn.close()
