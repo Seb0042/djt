@@ -9,6 +9,7 @@ from shutil import copyfile
 from mutagen.easyid3 import EasyID3
 
 dir = sys.argv[1]
+rdst="Target/"
 for root, dirs, files in os.walk(dir):
   for file in files:
     if file.endswith('.mp3') or file.endswith('.mpg') or file.endswith('.m4a'):
@@ -16,7 +17,7 @@ for root, dirs, files in os.walk(dir):
       info = mutagen.File(filename, easy=True)
       #print(info['artist'][0])
       #print(info['title'][0])
-      dst=info['genre'][0].replace('/','')
+      dst=rdst+info['genre'][0].replace('/','')
       try:
         os.mkdir(dst)
       except OSError as exc:

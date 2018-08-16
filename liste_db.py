@@ -10,10 +10,11 @@ c = conn.cursor()
 dir = sys.argv[1];
 for root, dirs, files in os.walk(dir):
   for file in files:
-    if file.endswith('.mp3'):
+    if file.endswith('.mp3') or file.endswith('.mpg') or file.endswith('.m4a'):
       filename = root+'/'+file
+      print(filename)
       info = mutagen.File(filename, easy=True)
-      for tag in ['artist', 'genre', 'title', 'mood']:
+      for tag in ['artist', 'genre', 'title']:
         if tag not in info.keys():
           if tag == 'artist':
             info['artist'] = ''
@@ -21,12 +22,17 @@ for root, dirs, files in os.walk(dir):
             info['title'] = ''
           elif tag == 'genre':
             info['genre'] = 'Unknown'
-          elif tag == 'mood':
-           info['mood'] = 'None'
+      if file.endswith('.m4a'):
+        if 'comment' not in info.keys():
+          info['comment'] = 'None'
+        mood = info['comment'][0] 
+      else:
+        if 'mood' not in info.keys():
+          info['mood'] = 'None'
+        mood = info['mood'][0]
       artist = info['artist'][0]
       genre = info['genre'][0]
       title = info['title'][0]
-      mood = info['mood'][0] 
       t = (artist,genre,title,mood,file,root) 
       sql = "insert into songs (artist,genre,title,com,filename,filepath) values (?,?,?,?,?,?)"
       c.execute(sql,t)  

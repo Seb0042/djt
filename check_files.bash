@@ -3,11 +3,6 @@
 d=sum
 export IFS="|"
 
-cat liste | while read nom p
+cat liste | while read nom p1 p2
 do
-	find /data/Music -name "$nom" -exec md5sum {} \; | while read l
-	do
-		ck=$(echo $l | cut -f1 -d' ')
-		echo "$ck $p " >> ${d}/${nom}
-	done
 done
