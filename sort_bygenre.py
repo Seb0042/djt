@@ -16,7 +16,6 @@ def mdir(dname):
     os.mkdir(dname)
   except OSError as exc:
     if exc.errno != errno.EEXIST:
-      print(dname)
       raise
     pass
 
@@ -48,6 +47,5 @@ for root, dirs, files in os.walk(dir):
       dgenre = getdgenre(info['artist'][0],root)
       tgenre = info['genre'][0].replace('/','')
       if ( tgenre != dgenre ):
-        print("tgenre: "+tgenre+", dgenre: "+dgenre+", artist: "+info['artist'][0])
         movefile(filename,dir,tgenre,info['artist'][0],file)
  
