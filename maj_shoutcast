@@ -1,0 +1,5 @@
+#!/bin/bash
+
+
+./insert_db.py Target
+./create_lists.py
