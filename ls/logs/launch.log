@@ -1,0 +1,687 @@
+2018/09/15 16:41:43 >>> LOG START
+2018/09/15 16:41:43 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:41:43 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:41:43 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:41:43 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:41:43 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:41:43 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:41:43 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:41:43 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:41:43 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:41:43 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:41:43 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:41:43 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:41:43 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:42:03 [protocol.process:3] Failed to execute get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-process4dcb99..txt": ("timeout","19.6220619678")
+2018/09/15 16:42:03 [radio(dot)txt:2] Timeout when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:42:03 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:42:03 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:42:03 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:42:03 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:42:03 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:42:03 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:42:03 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:42:03 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:42:03 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:42:03 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:42:17 [main:3] Shutdown started!
+2018/09/15 16:42:17 [main:3] Waiting for threads to terminate...
+2018/09/15 16:42:17 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:42:17 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:42:17 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:42:17 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:42:17 [main:3] Threads terminated.
+2018/09/15 16:42:17 [threads:3] Shutting down scheduler...
+2018/09/15 16:42:17 [threads:3] Scheduler shut down.
+2018/09/15 16:42:17 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:42:17 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:42:17 [main:3] Cleaning downloaded files...
+2018/09/15 16:42:17 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:42:17 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:42:17 [main:3] Freeing memory...
+2018/09/15 16:42:17 >>> LOG END
+2018/09/15 16:45:13 >>> LOG START
+2018/09/15 16:45:13 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:45:13 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:45:13 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:45:13 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:45:13 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:45:13 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:45:13 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:45:13 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:45:13 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:45:13 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:45:13 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:45:13 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:45:13 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:45:33 [protocol.process:3] Failed to execute get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processe22be4..txt": ("timeout","19.4005951881")
+2018/09/15 16:45:33 [radio(dot)txt:2] Failed when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:45:33 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:45:33 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:45:33 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:45:33 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:45:33 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:45:33 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:45:33 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:45:33 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:45:33 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:45:33 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:45:37 [main:3] Shutdown started!
+2018/09/15 16:45:37 [main:3] Waiting for threads to terminate...
+2018/09/15 16:45:37 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:45:37 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:45:37 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:45:37 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:45:37 [main:3] Threads terminated.
+2018/09/15 16:45:37 [threads:3] Shutting down scheduler...
+2018/09/15 16:45:37 [threads:3] Scheduler shut down.
+2018/09/15 16:45:37 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:45:37 [main:3] Cleaning downloaded files...
+2018/09/15 16:45:37 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:45:37 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:45:37 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:45:37 [main:3] Freeing memory...
+2018/09/15 16:45:37 >>> LOG END
+2018/09/15 16:46:05 >>> LOG START
+2018/09/15 16:46:05 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:46:05 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:46:05 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:46:05 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:46:05 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:46:05 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:46:05 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:46:05 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:46:05 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:46:05 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:46:05 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:46:05 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:46:05 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:46:25 [protocol.process:3] Failed to execute ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-process1cca87..txt": ("timeout","19.1748859882")
+2018/09/15 16:46:25 [radio(dot)txt:2] Failed when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:46:25 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:46:25 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:46:25 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:46:25 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:46:25 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:46:25 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:46:25 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:46:25 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:46:25 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:46:25 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:46:35 [main:3] Shutdown started!
+2018/09/15 16:46:35 [main:3] Waiting for threads to terminate...
+2018/09/15 16:46:35 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:46:35 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:46:35 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:46:35 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:46:35 [main:3] Threads terminated.
+2018/09/15 16:46:35 [threads:3] Shutting down scheduler...
+2018/09/15 16:46:35 [threads:3] Scheduler shut down.
+2018/09/15 16:46:35 [main:3] Cleaning downloaded files...
+2018/09/15 16:46:35 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:46:35 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:46:35 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:46:35 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:46:35 [main:3] Freeing memory...
+2018/09/15 16:46:35 >>> LOG END
+2018/09/15 16:47:35 >>> LOG START
+2018/09/15 16:47:35 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:47:35 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:47:35 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:47:35 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:47:35 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:47:35 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:47:35 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:47:35 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:47:35 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:47:35 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:47:35 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:47:35 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:47:35 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:47:55 [protocol.process:3] Failed to execute ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processa1f4ce..txt": ("timeout","19.6021637917")
+2018/09/15 16:47:55 [radio(dot)txt:2] Failed when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:47:55 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:47:55 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:47:55 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:47:55 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:47:55 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:47:55 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:47:55 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:47:55 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:47:55 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:47:55 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:48:12 [main:3] Shutdown started!
+2018/09/15 16:48:12 [main:3] Waiting for threads to terminate...
+2018/09/15 16:48:12 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:48:12 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:48:12 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:48:12 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:48:12 [main:3] Threads terminated.
+2018/09/15 16:48:12 [threads:3] Shutting down scheduler...
+2018/09/15 16:48:12 [threads:3] Scheduler shut down.
+2018/09/15 16:48:12 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:48:12 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:48:12 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:48:12 [main:3] Cleaning downloaded files...
+2018/09/15 16:48:12 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:48:12 [main:3] Freeing memory...
+2018/09/15 16:48:12 >>> LOG END
+2018/09/15 16:48:35 >>> LOG START
+2018/09/15 16:48:35 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:48:35 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:48:35 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:48:35 [decoder:4] Trying method "META" for "default/single.mp3"...
+2018/09/15 16:48:35 [decoder:4] Trying method "WAV" for "default/single.mp3"...
+2018/09/15 16:48:35 [decoder.wav/aiff:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:48:35 [decoder:4] Trying method "AIFF" for "default/single.mp3"...
+2018/09/15 16:48:35 [decoder.wav/aiff:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:48:35 [decoder:4] Trying method "MIDI" for "default/single.mp3"...
+2018/09/15 16:48:35 [decoder:4] Trying method "IMAGE" for "default/single.mp3"...
+2018/09/15 16:48:35 [decoder:4] Trying method "OGG" for "default/single.mp3"...
+2018/09/15 16:48:35 [decoder.ogg:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:48:35 [decoder:4] Trying method "MAD" for "default/single.mp3"...
+2018/09/15 16:48:35 [decoder.mad:4] Libmad recognizes "default/single.mp3" as mpeg audio (layer III, 64kbps, 44100Hz, 2 channels).
+2018/09/15 16:48:35 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:48:35 [decoder.ogg:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:48:35 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:48:35 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:48:35 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:48:35 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:48:35 [video.converter:4] Couldn't find preferred video converter: gavl.
+2018/09/15 16:48:35 [audio.converter:4] Using preferred samplerate converter: libsamplerate.
+2018/09/15 16:48:35 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:48:35 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:48:35 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:48:35 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:48:35 [clock:4] Currently 1 clocks allocated.
+2018/09/15 16:48:35 [clock.wallclock_alsa:4] Starting 1 sources...
+2018/09/15 16:48:35 [source:4] Source output.alsa_5961 gets up.
+2018/09/15 16:48:35 [source:4] Source fallback_5959 gets up.
+2018/09/15 16:48:35 [source:4] Source request gets up.
+2018/09/15 16:48:35 [request:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:48:35 [request:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:48:35 [source:4] Source switch_5958 gets up.
+2018/09/15 16:48:35 [source:4] Source playlist_5953 gets up.
+2018/09/15 16:48:35 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:48:35 [protocol.process:4] Processing .txt,./get_oc_file.py oc$(colon)//Salsa/radio.txt $(output)
+2018/09/15 16:48:35 [protocol.process:4] Executing ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processb4e232..txt"
+2018/09/15 16:48:35 [lang.run_process:4] Starting process
+2018/09/15 16:48:35 [lang.run_process:4] Closing process's stdin
+2018/09/15 16:48:55 [lang.run_process:4] Cleaning up process
+2018/09/15 16:48:55 [protocol.process:3] Failed to execute ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processb4e232..txt": ("timeout","19.9054319859")
+2018/09/15 16:48:55 [request:4] Failed to resolve "process:.txt,./get_oc_file.py oc$(colon)//Salsa/radio.txt $(output)"! For more info, see server command 'trace 1'.
+2018/09/15 16:48:55 [radio(dot)txt:2] Failed when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:48:55 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:48:55 [radio(dot)txt:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:48:55 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:48:55 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default), switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:48:55 [switch_5958:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:48:55 [source:4] Source single_5951 gets up.
+2018/09/15 16:48:55 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:48:55 [single_5951:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:48:55 [single_5951:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:48:55 [fallback_5959:4] Activations changed: static=[alsa_out(default):alsa_out(default)], dynamic=[].
+2018/09/15 16:48:55 [request:5] Queue is empty!
+2018/09/15 16:48:55 [request:5] Failed to prepare track: no file.
+2018/09/15 16:48:55 [radio(dot)txt:5] Queue is empty!
+2018/09/15 16:48:55 [radio(dot)txt:5] Failed to prepare track: no file.
+2018/09/15 16:48:55 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:48:55 [alsa_out(default):4] Activations changed: static=[alsa_out(default)], dynamic=[].
+2018/09/15 16:48:55 [alsa_out(default):4] Enabling caching mode: active source.
+2018/09/15 16:48:55 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:48:55 [clock.wallclock_alsa:4] Delegating clock to active sources.
+2018/09/15 16:48:55 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:48:55 [clock:4] Main phase starts.
+2018/09/15 16:48:55 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:48:55 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:48:55 [single_5951:4] Activations changed: static=[fallback_5959:alsa_out(default):alsa_out(default)], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:48:55 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:48:55 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:48:55 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:48:58 [main:3] Shutdown started!
+2018/09/15 16:48:58 [main:3] Waiting for threads to terminate...
+2018/09/15 16:48:58 [alsa_out(default):4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:48:58 [source:4] Source alsa_out(default) gets down.
+2018/09/15 16:48:58 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:48:58 [clock.wallclock_alsa:4] All active sources stopped, synching with wallclock.
+2018/09/15 16:48:58 [fallback_5959:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:48:58 [source:4] Source fallback_5959 gets down.
+2018/09/15 16:48:58 [request:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:48:58 [source:4] Source request gets down.
+2018/09/15 16:48:58 [request:4] Waiting for feeding task to stop...
+2018/09/15 16:48:58 [request:4] Cleaning up request queue...
+2018/09/15 16:48:58 [switch_5958:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:48:58 [source:4] Source switch_5958 gets down.
+2018/09/15 16:48:58 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:48:58 [radio(dot)txt:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:48:58 [source:4] Source radio(dot)txt gets down.
+2018/09/15 16:48:58 [radio(dot)txt:4] Waiting for feeding task to stop...
+2018/09/15 16:48:58 [radio(dot)txt:4] Cleaning up request queue...
+2018/09/15 16:48:58 [single_5951:4] Activations changed: static=[fallback_5959:alsa_out(default):alsa_out(default)], dynamic=[].
+2018/09/15 16:48:58 [single_5951:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:48:58 [source:4] Source single_5951 gets down.
+2018/09/15 16:48:58 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:48:58 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:48:58 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:48:58 [main:3] Threads terminated.
+2018/09/15 16:48:58 [threads:3] Shutting down scheduler...
+2018/09/15 16:48:58 [threads:3] Scheduler shut down.
+2018/09/15 16:48:58 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:48:58 [main:3] Cleaning downloaded files...
+2018/09/15 16:48:58 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:48:58 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:48:58 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:48:58 [main:3] Freeing memory...
+2018/09/15 16:48:58 >>> LOG END
+2018/09/15 16:50:51 >>> LOG START
+2018/09/15 16:50:51 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:50:51 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:50:51 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:50:51 [decoder:4] Trying method "META" for "default/single.mp3"...
+2018/09/15 16:50:51 [decoder:4] Trying method "WAV" for "default/single.mp3"...
+2018/09/15 16:50:51 [decoder.wav/aiff:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:50:51 [decoder:4] Trying method "AIFF" for "default/single.mp3"...
+2018/09/15 16:50:51 [decoder.wav/aiff:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:50:51 [decoder:4] Trying method "MIDI" for "default/single.mp3"...
+2018/09/15 16:50:51 [decoder:4] Trying method "IMAGE" for "default/single.mp3"...
+2018/09/15 16:50:51 [decoder:4] Trying method "OGG" for "default/single.mp3"...
+2018/09/15 16:50:51 [decoder.ogg:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:50:51 [decoder:4] Trying method "MAD" for "default/single.mp3"...
+2018/09/15 16:50:51 [decoder.mad:4] Libmad recognizes "default/single.mp3" as mpeg audio (layer III, 64kbps, 44100Hz, 2 channels).
+2018/09/15 16:50:51 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:50:51 [decoder.ogg:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:50:51 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:50:51 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:50:51 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:50:51 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:50:51 [video.converter:4] Couldn't find preferred video converter: gavl.
+2018/09/15 16:50:51 [audio.converter:4] Using preferred samplerate converter: libsamplerate.
+2018/09/15 16:50:51 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:50:51 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:50:51 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:50:51 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:50:51 [clock:4] Currently 1 clocks allocated.
+2018/09/15 16:50:51 [clock.wallclock_alsa:4] Starting 1 sources...
+2018/09/15 16:50:51 [source:4] Source output.alsa_5961 gets up.
+2018/09/15 16:50:51 [source:4] Source fallback_5959 gets up.
+2018/09/15 16:50:51 [source:4] Source request gets up.
+2018/09/15 16:50:51 [request:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:50:51 [request:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:50:51 [source:4] Source switch_5958 gets up.
+2018/09/15 16:50:51 [source:4] Source playlist_5953 gets up.
+2018/09/15 16:50:51 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:50:51 [protocol.process:4] Processing .txt,./get_oc_file.py oc$(colon)//Salsa/radio.txt $(output)
+2018/09/15 16:50:51 [protocol.process:4] Executing ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-process9c5e10..txt"
+2018/09/15 16:50:51 [lang.run_process:4] Starting process
+2018/09/15 16:50:51 [lang.run_process:4] Closing process's stdin
+2018/09/15 16:51:11 [protocol.process:3] Failed to execute ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-process9c5e10..txt": ("timeout","19.5673961639")
+2018/09/15 16:51:11 [request:4] Failed to resolve "process:.txt,./get_oc_file.py oc$(colon)//Salsa/radio.txt $(output)"! For more info, see server command 'trace 1'.
+2018/09/15 16:51:11 [radio(dot)txt:2] Timeout when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:51:11 [lang.run_process:4] Cleaning up process
+2018/09/15 16:51:11 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:51:11 [radio(dot)txt:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:51:11 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:51:11 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default), switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:51:11 [switch_5958:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:51:11 [source:4] Source single_5951 gets up.
+2018/09/15 16:51:11 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:51:11 [single_5951:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:51:11 [single_5951:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:51:11 [fallback_5959:4] Activations changed: static=[alsa_out(default):alsa_out(default)], dynamic=[].
+2018/09/15 16:51:11 [request:5] Queue is empty!
+2018/09/15 16:51:11 [request:5] Failed to prepare track: no file.
+2018/09/15 16:51:11 [radio(dot)txt:5] Queue is empty!
+2018/09/15 16:51:11 [radio(dot)txt:5] Failed to prepare track: no file.
+2018/09/15 16:51:11 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:51:11 [alsa_out(default):4] Activations changed: static=[alsa_out(default)], dynamic=[].
+2018/09/15 16:51:11 [alsa_out(default):4] Enabling caching mode: active source.
+2018/09/15 16:51:11 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:51:11 [clock.wallclock_alsa:4] Delegating clock to active sources.
+2018/09/15 16:51:11 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:51:11 [clock:4] Main phase starts.
+2018/09/15 16:51:11 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:51:11 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:51:11 [single_5951:4] Activations changed: static=[fallback_5959:alsa_out(default):alsa_out(default)], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:51:11 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:51:11 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:51:11 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:51:29 [main:3] Shutdown started!
+2018/09/15 16:51:29 [main:3] Waiting for threads to terminate...
+2018/09/15 16:51:29 [alsa_out(default):4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:51:29 [source:4] Source alsa_out(default) gets down.
+2018/09/15 16:51:29 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:51:29 [clock.wallclock_alsa:4] All active sources stopped, synching with wallclock.
+2018/09/15 16:51:29 [fallback_5959:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:51:29 [source:4] Source fallback_5959 gets down.
+2018/09/15 16:51:29 [request:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:51:29 [source:4] Source request gets down.
+2018/09/15 16:51:29 [request:4] Waiting for feeding task to stop...
+2018/09/15 16:51:29 [request:4] Cleaning up request queue...
+2018/09/15 16:51:29 [switch_5958:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:51:29 [source:4] Source switch_5958 gets down.
+2018/09/15 16:51:29 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:51:29 [radio(dot)txt:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:51:29 [source:4] Source radio(dot)txt gets down.
+2018/09/15 16:51:29 [radio(dot)txt:4] Waiting for feeding task to stop...
+2018/09/15 16:51:29 [radio(dot)txt:4] Cleaning up request queue...
+2018/09/15 16:51:29 [single_5951:4] Activations changed: static=[fallback_5959:alsa_out(default):alsa_out(default)], dynamic=[].
+2018/09/15 16:51:29 [single_5951:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:51:29 [source:4] Source single_5951 gets down.
+2018/09/15 16:51:29 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:51:29 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:51:29 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:51:29 [main:3] Threads terminated.
+2018/09/15 16:51:29 [threads:3] Shutting down scheduler...
+2018/09/15 16:51:29 [threads:3] Scheduler shut down.
+2018/09/15 16:51:29 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:51:29 [main:3] Cleaning downloaded files...
+2018/09/15 16:51:29 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:51:29 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:51:29 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:51:29 [main:3] Freeing memory...
+2018/09/15 16:51:29 >>> LOG END
+2018/09/15 16:52:10 >>> LOG START
+2018/09/15 16:52:10 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:52:10 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:52:10 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:52:10 [decoder:4] Trying method "META" for "default/single.mp3"...
+2018/09/15 16:52:10 [decoder:4] Trying method "WAV" for "default/single.mp3"...
+2018/09/15 16:52:10 [decoder.wav/aiff:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:52:10 [decoder:4] Trying method "AIFF" for "default/single.mp3"...
+2018/09/15 16:52:10 [decoder.wav/aiff:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:52:10 [decoder:4] Trying method "MIDI" for "default/single.mp3"...
+2018/09/15 16:52:10 [decoder:4] Trying method "IMAGE" for "default/single.mp3"...
+2018/09/15 16:52:10 [decoder:4] Trying method "OGG" for "default/single.mp3"...
+2018/09/15 16:52:10 [decoder.ogg:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:52:10 [decoder:4] Trying method "MAD" for "default/single.mp3"...
+2018/09/15 16:52:10 [decoder.mad:4] Libmad recognizes "default/single.mp3" as mpeg audio (layer III, 64kbps, 44100Hz, 2 channels).
+2018/09/15 16:52:10 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:52:10 [decoder.ogg:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:52:10 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:52:10 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:52:10 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:52:10 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:52:10 [video.converter:4] Couldn't find preferred video converter: gavl.
+2018/09/15 16:52:10 [audio.converter:4] Using preferred samplerate converter: libsamplerate.
+2018/09/15 16:52:10 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:52:10 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:52:10 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:52:10 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:52:10 [clock:4] Currently 1 clocks allocated.
+2018/09/15 16:52:10 [clock.wallclock_alsa:4] Starting 1 sources...
+2018/09/15 16:52:10 [source:4] Source output.alsa_5961 gets up.
+2018/09/15 16:52:10 [source:4] Source fallback_5959 gets up.
+2018/09/15 16:52:10 [source:4] Source request gets up.
+2018/09/15 16:52:10 [request:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:52:10 [request:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:52:10 [source:4] Source switch_5958 gets up.
+2018/09/15 16:52:10 [source:4] Source playlist_5953 gets up.
+2018/09/15 16:52:10 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:52:10 [protocol.process:4] Processing .txt,./get_oc_file.py oc$(colon)//Salsa/radio.txt $(output)
+2018/09/15 16:52:10 [protocol.process:4] Executing ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processc1e389..txt"
+2018/09/15 16:52:10 [lang.run_process:4] Starting process
+2018/09/15 16:52:10 [lang.run_process:4] Closing process's stdin
+2018/09/15 16:52:30 [protocol.process:3] Failed to execute ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processc1e389..txt": ("timeout","19.6563749313")
+2018/09/15 16:52:30 [lang.run_process:4] Cleaning up process
+2018/09/15 16:52:30 [request:4] Failed to resolve "process:.txt,./get_oc_file.py oc$(colon)//Salsa/radio.txt $(output)"! For more info, see server command 'trace 1'.
+2018/09/15 16:52:30 [radio(dot)txt:2] Timeout when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:52:30 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:52:30 [radio(dot)txt:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:52:30 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:52:30 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default), switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:52:30 [switch_5958:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:52:30 [source:4] Source single_5951 gets up.
+2018/09/15 16:52:30 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:52:30 [single_5951:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:52:30 [single_5951:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:52:30 [fallback_5959:4] Activations changed: static=[alsa_out(default):alsa_out(default)], dynamic=[].
+2018/09/15 16:52:30 [request:5] Queue is empty!
+2018/09/15 16:52:30 [request:5] Failed to prepare track: no file.
+2018/09/15 16:52:30 [radio(dot)txt:5] Queue is empty!
+2018/09/15 16:52:30 [radio(dot)txt:5] Failed to prepare track: no file.
+2018/09/15 16:52:30 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:52:30 [alsa_out(default):4] Activations changed: static=[alsa_out(default)], dynamic=[].
+2018/09/15 16:52:30 [alsa_out(default):4] Enabling caching mode: active source.
+2018/09/15 16:52:30 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:52:30 [clock.wallclock_alsa:4] Delegating clock to active sources.
+2018/09/15 16:52:30 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:52:30 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:52:30 [clock:4] Main phase starts.
+2018/09/15 16:52:30 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:52:30 [single_5951:4] Activations changed: static=[fallback_5959:alsa_out(default):alsa_out(default)], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:52:30 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:52:30 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:52:30 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:52:33 [main:3] Shutdown started!
+2018/09/15 16:52:33 [main:3] Waiting for threads to terminate...
+2018/09/15 16:52:33 [alsa_out(default):4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:52:33 [source:4] Source alsa_out(default) gets down.
+2018/09/15 16:52:33 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:52:33 [clock.wallclock_alsa:4] All active sources stopped, synching with wallclock.
+2018/09/15 16:52:33 [fallback_5959:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:52:33 [source:4] Source fallback_5959 gets down.
+2018/09/15 16:52:33 [request:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:52:33 [source:4] Source request gets down.
+2018/09/15 16:52:33 [request:4] Waiting for feeding task to stop...
+2018/09/15 16:52:33 [request:4] Cleaning up request queue...
+2018/09/15 16:52:33 [switch_5958:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:52:33 [source:4] Source switch_5958 gets down.
+2018/09/15 16:52:33 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:52:33 [radio(dot)txt:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:52:33 [source:4] Source radio(dot)txt gets down.
+2018/09/15 16:52:33 [radio(dot)txt:4] Waiting for feeding task to stop...
+2018/09/15 16:52:33 [radio(dot)txt:4] Cleaning up request queue...
+2018/09/15 16:52:33 [single_5951:4] Activations changed: static=[fallback_5959:alsa_out(default):alsa_out(default)], dynamic=[].
+2018/09/15 16:52:33 [single_5951:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:52:33 [source:4] Source single_5951 gets down.
+2018/09/15 16:52:33 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:52:33 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:52:33 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:52:33 [main:3] Threads terminated.
+2018/09/15 16:52:33 [threads:3] Shutting down scheduler...
+2018/09/15 16:52:33 [threads:3] Scheduler shut down.
+2018/09/15 16:52:33 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:52:33 [main:3] Cleaning downloaded files...
+2018/09/15 16:52:33 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:52:33 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:52:33 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:52:33 [main:3] Freeing memory...
+2018/09/15 16:52:33 >>> LOG END
+2018/09/15 16:55:47 >>> LOG START
+2018/09/15 16:55:47 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:55:47 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:55:47 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:55:47 [decoder:4] Trying method "META" for "default/single.mp3"...
+2018/09/15 16:55:47 [decoder:4] Trying method "WAV" for "default/single.mp3"...
+2018/09/15 16:55:47 [decoder.wav/aiff:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:55:47 [decoder:4] Trying method "AIFF" for "default/single.mp3"...
+2018/09/15 16:55:47 [decoder.wav/aiff:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:55:47 [decoder:4] Trying method "MIDI" for "default/single.mp3"...
+2018/09/15 16:55:47 [decoder:4] Trying method "IMAGE" for "default/single.mp3"...
+2018/09/15 16:55:47 [decoder:4] Trying method "OGG" for "default/single.mp3"...
+2018/09/15 16:55:47 [decoder.ogg:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:55:47 [decoder:4] Trying method "MAD" for "default/single.mp3"...
+2018/09/15 16:55:47 [decoder.mad:4] Libmad recognizes "default/single.mp3" as mpeg audio (layer III, 64kbps, 44100Hz, 2 channels).
+2018/09/15 16:55:47 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:55:47 [decoder.ogg:4] Invalid file extension for "default/single.mp3"!
+2018/09/15 16:55:47 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:55:47 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:55:47 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:55:47 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:55:47 [video.converter:4] Couldn't find preferred video converter: gavl.
+2018/09/15 16:55:47 [audio.converter:4] Using preferred samplerate converter: libsamplerate.
+2018/09/15 16:55:47 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:55:47 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:55:47 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:55:47 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:55:47 [clock:4] Currently 1 clocks allocated.
+2018/09/15 16:55:47 [clock.wallclock_alsa:4] Starting 1 sources...
+2018/09/15 16:55:47 [source:4] Source output.alsa_5961 gets up.
+2018/09/15 16:55:47 [source:4] Source fallback_5959 gets up.
+2018/09/15 16:55:47 [source:4] Source request gets up.
+2018/09/15 16:55:47 [request:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:55:47 [request:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:55:47 [source:4] Source switch_5958 gets up.
+2018/09/15 16:55:47 [source:4] Source playlist_5953 gets up.
+2018/09/15 16:55:47 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:55:47 [protocol.process:4] Processing .txt,./get_oc_file.py oc$(colon)//Salsa/radio.txt $(output)
+2018/09/15 16:55:47 [protocol.process:4] Executing ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processb461fd..txt"
+2018/09/15 16:55:47 [lang.run_process:4] Starting process
+2018/09/15 16:55:47 [lang.run_process:4] Closing process's stdin
+2018/09/15 16:56:07 [protocol.process:3] Failed to execute ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processb461fd..txt": ("timeout","19.7373580933")
+2018/09/15 16:56:07 [lang.run_process:4] Cleaning up process
+2018/09/15 16:56:07 [request:4] Failed to resolve "process:.txt,./get_oc_file.py oc$(colon)//Salsa/radio.txt $(output)"! For more info, see server command 'trace 1'.
+2018/09/15 16:56:07 [radio(dot)txt:2] Failed when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:56:07 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:56:07 [radio(dot)txt:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:56:07 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:56:07 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default), switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:56:07 [switch_5958:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:56:07 [source:4] Source single_5951 gets up.
+2018/09/15 16:56:07 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:56:07 [single_5951:4] Content kind is {audio=2;video=0;midi=0}.
+2018/09/15 16:56:07 [single_5951:4] Activations changed: static=[], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:56:07 [fallback_5959:4] Activations changed: static=[alsa_out(default):alsa_out(default)], dynamic=[].
+2018/09/15 16:56:07 [request:5] Queue is empty!
+2018/09/15 16:56:07 [request:5] Failed to prepare track: no file.
+2018/09/15 16:56:07 [radio(dot)txt:5] Queue is empty!
+2018/09/15 16:56:07 [radio(dot)txt:5] Failed to prepare track: no file.
+2018/09/15 16:56:07 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:56:07 [alsa_out(default):4] Activations changed: static=[alsa_out(default)], dynamic=[].
+2018/09/15 16:56:07 [alsa_out(default):4] Enabling caching mode: active source.
+2018/09/15 16:56:07 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:56:07 [clock.wallclock_alsa:4] Delegating clock to active sources.
+2018/09/15 16:56:07 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:56:07 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:56:07 [clock:4] Main phase starts.
+2018/09/15 16:56:07 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:56:07 [single_5951:4] Activations changed: static=[fallback_5959:alsa_out(default):alsa_out(default)], dynamic=[fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:56:07 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:56:07 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:56:07 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:56:13 [main:3] Shutdown started!
+2018/09/15 16:56:13 [main:3] Waiting for threads to terminate...
+2018/09/15 16:56:13 [alsa_out(default):4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:56:13 [source:4] Source alsa_out(default) gets down.
+2018/09/15 16:56:13 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:56:13 [clock.wallclock_alsa:4] All active sources stopped, synching with wallclock.
+2018/09/15 16:56:13 [fallback_5959:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:56:13 [source:4] Source fallback_5959 gets down.
+2018/09/15 16:56:13 [request:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:56:13 [source:4] Source request gets down.
+2018/09/15 16:56:13 [request:4] Waiting for feeding task to stop...
+2018/09/15 16:56:13 [request:4] Cleaning up request queue...
+2018/09/15 16:56:13 [switch_5958:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:56:13 [source:4] Source switch_5958 gets down.
+2018/09/15 16:56:13 [radio(dot)txt:4] Activations changed: static=[], dynamic=[switch_5958:fallback_5959:alsa_out(default):alsa_out(default)].
+2018/09/15 16:56:13 [radio(dot)txt:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:56:13 [source:4] Source radio(dot)txt gets down.
+2018/09/15 16:56:13 [radio(dot)txt:4] Waiting for feeding task to stop...
+2018/09/15 16:56:13 [radio(dot)txt:4] Cleaning up request queue...
+2018/09/15 16:56:13 [single_5951:4] Activations changed: static=[fallback_5959:alsa_out(default):alsa_out(default)], dynamic=[].
+2018/09/15 16:56:13 [single_5951:4] Activations changed: static=[], dynamic=[].
+2018/09/15 16:56:13 [source:4] Source single_5951 gets down.
+2018/09/15 16:56:13 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:56:13 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:56:13 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:56:13 [main:3] Threads terminated.
+2018/09/15 16:56:13 [threads:3] Shutting down scheduler...
+2018/09/15 16:56:13 [threads:3] Scheduler shut down.
+2018/09/15 16:56:13 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:56:13 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:56:13 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:56:13 [main:3] Cleaning downloaded files...
+2018/09/15 16:56:13 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:56:13 [main:3] Freeing memory...
+2018/09/15 16:56:13 >>> LOG END
+2018/09/15 16:58:12 >>> LOG START
+2018/09/15 16:58:12 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:58:12 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:58:12 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:58:32 [radio(dot)txt:2] Failed when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:58:32 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:58:35 >>> LOG END
+2018/09/15 16:58:53 >>> LOG START
+2018/09/15 16:58:53 [main:3] Liquidsoap 1.3.3
+2018/09/15 16:58:53 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 16:58:53 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 16:58:53 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 16:58:53 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 16:58:53 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 16:58:53 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 16:58:53 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 16:58:53 [threads:3] Created thread "generic queue #1".
+2018/09/15 16:58:53 [threads:3] Created thread "generic queue #2".
+2018/09/15 16:58:53 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 16:58:53 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 16:58:53 [radio(dot)txt:3] Loading playlist...
+2018/09/15 16:59:13 [protocol.process:3] Failed to execute ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-process6240bf..txt": ("timeout","19.5469071865")
+2018/09/15 16:59:13 [radio(dot)txt:2] Failed when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 16:59:13 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 16:59:13 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 16:59:13 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 16:59:13 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 16:59:13 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 16:59:13 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 16:59:13 [fallback_5959:3] Switch to single_5951.
+2018/09/15 16:59:13 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 16:59:13 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 16:59:13 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 16:59:18 [main:3] Shutdown started!
+2018/09/15 16:59:18 [main:3] Waiting for threads to terminate...
+2018/09/15 16:59:18 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 16:59:18 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 16:59:18 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 16:59:18 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 16:59:18 [main:3] Threads terminated.
+2018/09/15 16:59:18 [threads:3] Shutting down scheduler...
+2018/09/15 16:59:18 [threads:3] Scheduler shut down.
+2018/09/15 16:59:18 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 16:59:18 [main:3] Cleaning downloaded files...
+2018/09/15 16:59:18 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 16:59:18 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 16:59:18 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 16:59:18 [main:3] Freeing memory...
+2018/09/15 16:59:18 >>> LOG END
+2018/09/15 17:00:45 >>> LOG START
+2018/09/15 17:00:45 [main:3] Liquidsoap 1.3.3
+2018/09/15 17:00:45 [main:3] Using: bytes=[distributed with OCaml 4.02 or above] pcre=7.3.4 dtools=0.4.0 duppy=0.7.1 duppy.syntax=0.7.1 cry=0.6.2 mm=0.4.0 ogg=0.5.2 vorbis=0.7.1 mad=0.4.5 dynlink=[distributed with Ocaml] lame=0.3.3 alsa=0.2.3 samplerate=0.1.4 taglib=0.3.3 camomile=1.0.1
+2018/09/15 17:00:45 [dynamic.loader:3] Could not find dynamic module for fdkaac encoder.
+2018/09/15 17:00:45 [decoder:3] Method "MAD" accepted "default/single.mp3".
+2018/09/15 17:00:45 [frame:3] Using 44100Hz audio, 25Hz video, 44100Hz master.
+2018/09/15 17:00:45 [frame:3] Frame size must be a multiple of 1764 ticks = 1764 audio samples = 1 video samples.
+2018/09/15 17:00:45 [frame:3] Targetting 'frame.duration': 0.04s = 1764 audio samples = 1764 ticks.
+2018/09/15 17:00:45 [frame:3] Frames last 0.04s = 1764 audio samples = 1 video samples = 1764 ticks.
+2018/09/15 17:00:45 [threads:3] Created thread "generic queue #1".
+2018/09/15 17:00:45 [threads:3] Created thread "generic queue #2".
+2018/09/15 17:00:45 [threads:3] Created thread "non-blocking queue #1".
+2018/09/15 17:00:45 [threads:3] Created thread "non-blocking queue #2".
+2018/09/15 17:00:45 [radio(dot)txt:3] Loading playlist...
+2018/09/15 17:01:05 [protocol.process:3] Failed to execute ./get_oc_file.py oc://Salsa/radio.txt "/tmp/liq-processca8cb8..txt": ("timeout","19.0352430344")
+2018/09/15 17:01:05 [radio(dot)txt:2] Timeout when resolving playlist URI "oc://Salsa/radio.txt"!
+2018/09/15 17:01:05 [radio(dot)txt:3] Successfully loaded a playlist of 0 tracks.
+2018/09/15 17:01:05 [single_5951:3] "default/single.mp3" is static, resolving once for all...
+2018/09/15 17:01:05 [single_5951:3] Prepared "default/single.mp3" (RID 0).
+2018/09/15 17:01:05 [threads:3] Created thread "alsa_out(default)" (1 total).
+2018/09/15 17:01:05 [threads:3] Created thread "wallclock_alsa" (2 total).
+2018/09/15 17:01:05 [clock.wallclock_alsa:3] Streaming loop starts, synchronized by active sources.
+2018/09/15 17:01:05 [fallback_5959:3] Switch to single_5951.
+2018/09/15 17:01:05 [alsa_out(default):3] Using ALSA 1.1.3.
+2018/09/15 17:01:05 [alsa_out(default):2] Falling back on interleaved S16LE
+2018/09/15 17:01:05 [alsa_out(default):3] Samplefreq=44100Hz, Bufsize=1048576B, Frame=4B, Periods=1024
+2018/09/15 17:01:08 [main:3] Shutdown started!
+2018/09/15 17:01:08 [main:3] Waiting for threads to terminate...
+2018/09/15 17:01:08 [threads:3] Thread "alsa_out(default)" terminated (1 remaining).
+2018/09/15 17:01:08 [single_5951:3] Finished with "default/single.mp3".
+2018/09/15 17:01:08 [clock.wallclock_alsa:3] Streaming loop stopped.
+2018/09/15 17:01:08 [threads:3] Thread "wallclock_alsa" terminated (0 remaining).
+2018/09/15 17:01:08 [main:3] Threads terminated.
+2018/09/15 17:01:08 [threads:3] Shutting down scheduler...
+2018/09/15 17:01:08 [threads:3] Scheduler shut down.
+2018/09/15 17:01:08 [threads:3] Thread "non-blocking queue #1" terminated.
+2018/09/15 17:01:08 [threads:3] Thread "non-blocking queue #2" terminated.
+2018/09/15 17:01:08 [main:3] Cleaning downloaded files...
+2018/09/15 17:01:08 [threads:3] Thread "generic queue #1" terminated.
+2018/09/15 17:01:08 [threads:3] Thread "generic queue #2" terminated.
+2018/09/15 17:01:08 [main:3] Freeing memory...
+2018/09/15 17:01:09 >>> LOG END

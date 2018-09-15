@@ -1,0 +1,45 @@
+#!/usr/bin/liquidsoap 
+set("log.stdout", true)
+set("log.file.path","/home/djt/ls/logs/launch.log")
+set("log.file",true)
+set("harbor.bind_addr","0.0.0.0")
+set("log.level",4)
+set("server.telnet",true)
+set("init.daemon.pidfile.path","/home/djt/ls/1.pid")
+set("init.daemon",true)
+
+enable_replaygain_metadata()
+
+default = single("/home/djt/radio/ad2.mp3")
+day     = playlist("~/mp3/Music/")
+night   = playlist("~/mp3/Music/")
+jingles = playlist("~/radio/jingles/")
+
+#clock   = playlist("/home/djt/radio/jingles/")
+
+radio = fallback([ request.queue(id="request"),
+                    switch([({ 6h-22h }, day),
+                            ({ 22h-6h }, night)]),
+                    default])
+radio = fallback( [  switch( [ ( { 7m-15m }, delay( 240., jingles)) ] ) ,radio] )
+radio = amplify(1.,override="replay_gain",radio)
+#timed_promotions = delay(2400.,clock)
+#radio = fallback([timed_promotions,radio])
+# Add the normal jingles
+#radio = random(weights=[1,6],[ jingles, radio ])
+
+live = input.harbor("", id = "1", buffer = 10.,max = 50. , icy = true , password = "5J4+1xMknIBtZuNaJ34BVQvmBN7S141XPqo52TxDMvo=", port = 7800 )
+live = fallback(track_sensitive=false, [live, radio]) 
+stream = fallback(track_sensitive=false, [ strip_blank(max_blank=10.,live) , radio ])
+
+ # fallback(track_sensitive=false,
+ #          [input.http("http://localhost:7800/live.mp3"),
+ #           radio])
+
+output.icecast(%mp3(bitrate=256,samplerate=44100),fallible=true, 
+  host="localhost",protocol="icy",port=8000,password="a7c74bfa8a37c83b807cd109595966a6",
+  mount="Bob",stream)
+output.icecast(%mp3(bitrate=128,samplerate=44100),fallible=true, 
+  host="localhost",protocol="icy",port=8000,password="a7c74bfa8a37c83b807cd109595966a6:#2",
+  mount="2",stream)
+
