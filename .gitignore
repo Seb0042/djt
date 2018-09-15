@@ -1,3 +1,4 @@
 Target/*
 songs.db
 liste
+pyocclient/*
