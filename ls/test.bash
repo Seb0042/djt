@@ -12,7 +12,7 @@ end
 add_protocol("oc",oc_protocol,doc="Fetch files from OC using custom python", syntax="oc://fic")
 
 default = single("default/single.mp3")
-Salsa = playlist("oc://Salsa/radio.txt")
+Salsa = playlist("oc://Salsa/radio.xml")
 day     = Salsa
 night   = Salsa
 
