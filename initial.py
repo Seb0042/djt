@@ -14,7 +14,7 @@ for root, dirs, files in os.walk(dir):
     if file.endswith('.mp3'):
       filename = root+'/'+file
       info = mutagen.File(filename, easy=True)
-      for tag in ['artist', 'genre', 'title', 'mood']:
+      for tag in ['artist', 'genre', 'title', 'comment']:
         if tag not in info.keys():
           if tag == 'artist':
             info['artist'] = 'Unknown'
@@ -22,8 +22,8 @@ for root, dirs, files in os.walk(dir):
             info['title'] = 'Unknown'
           elif tag == 'genre':
             info['genre'] = 'Unknown'
-          elif tag == 'mood':
-           info['mood'] = 'None'
+          elif tab == 'comment':
+            info['comment'] = 'None'
       info.save()
 conn.commit()
 conn.close()

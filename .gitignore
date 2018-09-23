@@ -2,3 +2,4 @@ Target/*
 songs.db
 liste
 pyocclient/*
+*.log

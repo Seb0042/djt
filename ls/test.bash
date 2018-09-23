@@ -4,15 +4,17 @@ set("log.stdout", true)
 set("log.file.path","logs/launch.log")
 set("log.file",true)
 set("log.level",3)
+set("server.telnet",true)
 
-def oc_protocol(~rlog,~maxtime,fic) =
-  extname = file.extension(dir_sep="/",fic)
-  [process_uri(extname=extname,"./get_oc_file.py oc:#{fic} $(output)")]
+def nextcloud(~rlog,~maxtime,arg) =
+  extname = file.extension(dir_sep="/",arg)
+  [process_uri(extname=extname,"/data/djt/ls/get_file.bash '#{arg}' $(output)")]
 end
-add_protocol("oc",oc_protocol,doc="Fetch files from OC using custom python", syntax="oc://fic")
+add_protocol("nc",nextcloud,doc="Fetch files from nextcloud", syntax="nc://uri")
 
 default = single("default/single.mp3")
-Salsa = playlist("oc://Salsa/radio.xml")
+Salsa = playlist(timeout=30.0,"nc://Salsa/radio.txt")
+#Salsa = playlist("radio.txt")
 day     = Salsa
 night   = Salsa
 
